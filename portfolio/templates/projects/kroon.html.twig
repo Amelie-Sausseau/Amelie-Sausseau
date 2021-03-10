@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kroon
+{% endblock %}
+
+{% block body %}
+
+	<img class="project-picture" src="{{ asset('img/logo-kroon.png') }}"/>
+	<section>
+		<div class="project-description">
+			<h2>Projet Kroon - Février 2021</h2>
+
+			<p>Dans le cadre de ma formation chez O'Clock, le dernier mois a été consacré à la réalisation d'un projet en groupe de quatre en autonomie (2 développeurs front-end/React, 2 développeurs back-end/Symfony).</p>
+
+			<p>Nous avons décidé de réaliser un site d'entraide pour mobiles et tablettes permettant de rechercher des chansons ou des films à partir de paroles/répliques enregistrées vocalement</p>
+
+			<p>La formation étant en téléprésentiel, nous avons tous travaillé à distance avec utilisation de Google Drive, Github, LiveShare sur VSCode, Slack et Discord.</p>
+
+			<p>Nous avons monté ce projet de A à Z selon la méthode scrum en quatre sprints d'une semaine chacun :</p>
+			<ul>
+				<li>Sprint 0 : Organisation du projet (Création d'un cahier des charges, veille technologique, déploiement sur AWS)</li>
+				<li>Sprint 1 et 2: Développement des fonctionnalités back (création d'une API, gestion de
+					            l'authentification, des autorisations, base de données, création d'un back-office, formulaire de contact)
+				</li>
+				<li>Sprint 3 : Correction des bugs et amélioration des fonctionnalités mises en place
+				</li>
+			</ul>
+
+			<p>Le projet s'est déroulé du 05/02/2021 au 05/03/2021 avec exactement 14 jours de code et présentation en direct sur YouTube à la fin.
+			</p>
+
+			<p>A ce jour, le back-end est déployé sur AWS et le front-end sur Surge. Le site est visible mais l'enregistrement vocal est bloqué par les navigateurs : il n'a pas encore été sécurisé car nous projetons de continuer son développement, le passer en React native pour en faire une application et le faire héberger sur une autre plateforme.
+			</p>
+
+			<p>Par manque de temps, certaines fonctionnalités ont pu être développées côté back, mais pas côté front. Cela fera donc l'objet d'une V2, avec d'autres améliorations prévues en back comme en front (réinitialisation de mot de passe, confirmation de l'inscription par email, création de profil pour chaque utilisateur).
+			</p>
+
+		</div>
+
+    <div class="project-pictures">
+		<div class="project-thumbnail">
+			<img src="{{ asset('img/kroon1.png') }}"/>
+		</div>
+
+		<div class="project-thumbnail">
+			<img src="{{ asset('img/kroon2.png') }}"/>
+		</div>
+
+		<div class="project-thumbnail">
+			<img src="{{ asset('img/kroon3.png') }}"/>
+		</div>
+
+		<div class="project-thumbnail">
+			<img src="{{ asset('img/kroon4.png') }}"/>
+		</div>
+    </div>
+
+	</section>
+	<hr/>
+	<section>
+		<h5>Voir le projet</h5>
+		<p>La présentation du projet sur YouTube (à partir de 40min40) :
+			<a target="_blank" href="https://www.youtube.com/watch?v=ohbX2C00bL8&t=2172s">
+				<i class="fab fa-youtube">&emsp;</i>
+			</a>
+		</p>
+
+		<p>Le site (à mettre au format mobile ou tablette grâce à l'inspecteur de votre navigateur):
+			<a target="_blank" href="https://kroon.surge.sh">
+				<i class="fas fa-link">&emsp;</i>
+			</a>
+		</p>
+
+		<p>Dépôt Github:
+			<a target="_blank" href="https://github.com/Amelie-Sausseau/projet-kroon">
+				<i class="fab fa-github-square">&emsp;</i>
+			</a>
+		</p>
+	</section>
+	<hr/>
+
+	<div class="container">
+
+		<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+
+	</div>
+
+{% endblock %}

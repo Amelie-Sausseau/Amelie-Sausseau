@@ -8,7 +8,7 @@
 	<img id="picture" src="{{ asset('img/70524441.jpeg') }}"/>
 	<img id="country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
 	<section>
-		<div id="description">
+		<div class="description">
 			<h1>Bonjour, je suis
 				<strong>Amélie Sausseau</strong>
 			</h1>
@@ -28,9 +28,9 @@
 <br>
             <section>
 			<h5>En savoir plus</h5>
-				<p>Me contacter: <a target="_blank" href="{{ path('contact') }}"><i class="fas fa-envelope-square">&emsp;</i></a>
+				<p>Me contacter: <a href="{{ path('contact') }}"><i class="fas fa-envelope-square">&emsp;</i></a>
 
-				Mon CV: <a target="_blank" href="{{ path('curriculum') }}"><i class="far fa-file">&emsp;</i></a>
+				Mon CV: <a href="{{ path('curriculum') }}"><i class="far fa-file">&emsp;</i></a>
 
 				Linkedin: <a target="_blank" href="https://www.linkedin.com/in/amelie-sausseau/"><i class="fab fa-linkedin">&emsp;</i></a>
 
@@ -133,7 +133,19 @@
 			</p>
 			<p class="thumbnail-description">Site d'entraide pour retrouver l'origine ou le titre d'un son, d'une réplique de film...</p>
 			<div class="thumbnail-footer">
-				<a href="" target="_blank">En savoir plus</a>
+				<a href="{{ path('kroon') }}">En savoir plus</a>
+			</div>
+		</div>
+	</div>
+	<div class="thumbnail">
+		<div class="thumbnail-kroon"></div>
+		<div class="thumbnail-content">
+			<span class="badge">Site</span>
+			<p class="thumbnail-title">Portfolio
+			</p>
+			<p class="thumbnail-description">Réalisation de mon portfolio avec utilisation du framework Symfony</p>
+			<div class="thumbnail-footer">
+				<a href="{{ path('kroon') }}">En savoir plus</a>
 			</div>
 		</div>
 	</div>
