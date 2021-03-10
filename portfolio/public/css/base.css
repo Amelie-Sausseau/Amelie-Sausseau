@@ -27,6 +27,13 @@ body {
     text-align: center;
 }
 
+.cv {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 .form-group {
     text-align: left;
 }

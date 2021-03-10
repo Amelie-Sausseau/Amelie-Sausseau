@@ -17,4 +17,23 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    /**
+     * @Route("/curriculum", name="curriculum")
+     */
+    public function curriculum(): Response
+    {
+        return $this->render('main/curriculum.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/downloadcv", name="download_cv")
+     */
+    public function download(): Response
+    {
+        // on force le téléchargement du calendrier
+        return $this->file(__DIR__ . '/../../public/files/CV+Amélie+Sausseau.pdf');
+    }
 }
