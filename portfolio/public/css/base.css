@@ -27,6 +27,16 @@ body {
     text-align: center;
 }
 
+.form-group {
+    text-align: left;
+}
+
+.form-group h6 {
+    text-align: right;
+    color: lightgray;
+    margin-top: 10px;
+}
+
 .fab, 
 .fas,
 .far {
