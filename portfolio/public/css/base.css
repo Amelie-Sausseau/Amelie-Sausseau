@@ -1,0 +1,157 @@
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-image: url(../img/sky.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    position: relative;
+    background: white;
+    max-width: 80%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fab, 
+.fas,
+.far {
+    font-size: 30px;
+    color: #3b5998;
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.page>* {
+    margin: auto;
+}
+
+h1, h2, h3, h5 {
+    margin-bottom: 20px;
+}
+
+h1,h2,h3,h5,p,a {
+    color: rgba(0,0,0,0.8);
+}
+
+hr {
+    border:0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3b5998;
+    color:white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #f0f2f5;
+    color: black;
+}
+
+[disabled]{
+    opacity: 0.3;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    width: 50%;
+}
+
+.list li:nth-child(even){
+    text-align: left;
+}
+
+.list li:nth-child(odd){
+    text-align: right;
+}
+
+#description {
+    text-align:center;
+}
+
+#picture {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: -50px;
+    left: calc(50% - 50px);
+    border: 5px solid white;
+}
+
+#country {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    left: calc(50% + 80px);
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 500px){
+    .list li {
+        width: 100%;
+    }
+    .list li:nth-child(even){
+        text-align: center;
+    }
+    .list li:nth-child(odd){
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .button {
+        margin: 5px 10px;
+    }
+    .or {
+        display: inline-block;
+        width: 100%;
+    }
+}

@@ -81,6 +81,9 @@
     "egulias/email-validator": {
         "version": "2.1.25"
     },
+    "fortawesome/font-awesome": {
+        "version": "5.15.2"
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
