@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+
+	<h1>
+		Contact
+	</h1>
+
+	<div class="container">
+		{{ form_start(form) }}
+		{{ form_errors(form) }}
+
+        <div class="form-group">
+		{{ form_label(form.name, 'Nom ') }}
+        {{ form_widget(form.name, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.name) }}
+        <br>
+
+		{{ form_label(form.email, 'Adresse email ') }}
+        {{ form_widget(form.email, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.email) }}
+        <br>
+
+		{{ form_label(form.message, 'Votre message ') }}
+        {{ form_widget(form.message, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.message) }}
+        <br>
+        </div>
+
+
+		<button class="button" type="submit">Envoyer</button>
+		<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+
+		{{ form_end(form) }}
+	</div>
+{% endblock %}
