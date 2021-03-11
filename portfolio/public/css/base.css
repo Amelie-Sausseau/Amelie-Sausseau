@@ -62,6 +62,26 @@ body {
     color: #f0f2f5;;
 }
 
+section {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.hover-section {
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.hover-section:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
 .page {
     position: relative;
     height: 100vh;
