@@ -1,5 +1,8 @@
-### Hi there 👋
+### Bonjour 👋
 
+Je suis Amélie, récemment sortie de l'école O'Clock où je me suis spécialisée en Back-end (Symfony).
+
+Bienvenue sur mon Github !
 <!--
 **Amelie-Sausseau/Amelie-Sausseau** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
