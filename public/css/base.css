@@ -230,10 +230,26 @@ hr {
 
     #picture,
     #country {
-        margin-top: 100px;
+        position: sticky;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .home {
-        margin-top: 150px;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    #picture,
+    #country {
+        position: sticky;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home {
+        margin-top: 20px;
     }
 }
