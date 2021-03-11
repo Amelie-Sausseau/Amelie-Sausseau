@@ -111,3 +111,11 @@
     background: #f0f2f5;
     color: black;
 }
+
+@media screen and (max-width: 500px){
+    .thumbnail {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
