@@ -21,14 +21,22 @@ body {
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
-    padding: 10px;
-    padding-top: 100px;
+    padding-bottom: 10px;
     box-sizing: border-box;
     text-align: center;
 }
 
+.home {
+    margin-top: 30px;
+}
+
+.navbar {
+    max-width: 100%;
+    width: 100%;
+}
+
 .cv {
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -76,6 +84,7 @@ section {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .page {
@@ -101,6 +110,10 @@ h1, h2, h3, h5 {
 }
 
 h5 {
+    margin-top: 20px;
+}
+
+h1 {
     margin-top: 20px;
 }
 
@@ -130,6 +143,10 @@ hr {
 .button:hover {
     background: #f0f2f5;
     color: black;
+}
+
+.contact a {
+    margin-right: 25px;
 }
 
 [disabled]{
@@ -199,8 +216,24 @@ hr {
     .button {
         margin: 5px 10px;
     }
+
+    .cv {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     section a {
         display: inline-block;
         width: 100%;
+    }
+
+    #picture,
+    #country {
+        margin-top: 100px;
+    }
+
+    .home {
+        margin-top: 150px;
     }
 }

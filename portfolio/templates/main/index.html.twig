@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-
+	<div class="home">
 	<img id="picture" src="{{ asset('img/70524441.jpeg') }}"/>
 	<img id="country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
 	<section>
@@ -26,31 +26,6 @@
 	</div>
 </section>
 <br>
-<section>
-	<h5>En savoir plus</h5>
-	<p>Me contacter:
-		<a href="{{ path('contact') }}">
-			<i class="fas fa-envelope-square">&emsp;</i>
-		</a>
-
-		Mon CV:
-		<a href="{{ path('curriculum') }}">
-			<i class="far fa-file">&emsp;</i>
-		</a>
-
-		Linkedin:
-		<a target="_blank" href="https://www.linkedin.com/in/amelie-sausseau/">
-			<i class="fab fa-linkedin">&emsp;</i>
-		</a>
-
-		Github:
-		<a target="_blank" href="https://github.com/Amelie-Sausseau/">
-			<i class="fab fa-github-square">&emsp;</i>
-		</a>
-	</p>
-</section>
-<hr/>
-
 <section class="hover-section">
 	<h3>Réalisations</h3>
 	<div class="thumbnail">
@@ -184,4 +159,28 @@
 			<p>En charge du conseil client et de la caisse.</p>
 		</div>
 	</div>
-</div></section>{% endblock %}
+</div>
+</section>
+<hr/>
+<section class="contact">
+	<h5>En savoir plus</h5>
+	<p>Me contacter:
+		<a href="{{ path('contact') }}">
+			<i class="fas fa-envelope-square"></i></a>
+
+		Mon CV:
+		<a href="{{ path('curriculum') }}">
+			<i class="far fa-file"></i></a>
+
+		Linkedin:
+		<a target="_blank" href="https://www.linkedin.com/in/amelie-sausseau/">
+			<i class="fab fa-linkedin"></i></a>
+
+		Github:
+		<a target="_blank" href="https://github.com/Amelie-Sausseau/">
+			<i class="fab fa-github-square"></i></a>
+	</p>
+</section>
+
+
+</div>{% endblock %}

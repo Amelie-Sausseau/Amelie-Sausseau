@@ -9,6 +9,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProjectsController extends AbstractController
 {
     /**
+     * @Route("/projets", name="projects")
+     */
+    public function projects(): Response
+    {
+        return $this->render('projects/index.html.twig', [
+            'controller_name' => 'ProjectsController',
+        ]);
+    } 
+
+    /**
      * @Route("/kroon", name="kroon")
      */
     public function kroon(): Response
