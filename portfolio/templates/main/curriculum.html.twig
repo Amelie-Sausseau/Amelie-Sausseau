@@ -1,16 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}CV{% endblock %}
+{% block title %}CV
+{% endblock %}
 
 {% block body %}
 
-    <img class="cv" src="{{ asset('img/CV.png') }}"/>
+	<img class="cv" src="{{ asset('img/CV.png') }}"/>
 
-<div class="container">
+	<div class="container">
 
 		<a class="button" href="{{ path('download_cv') }}">Télécharger en PDF</a>
 		<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
 
-</div>
+	</div>
 
 {% endblock %}

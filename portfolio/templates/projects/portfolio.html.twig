@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio
+{% endblock %}
+
+{% block body %}
+
+	<section>
+		<div class="project-description">
+			<h2>Portfolio - Mars 2021</h2>
+
+			<p>Afin de continuer à pratiquer et pouvoir regrouper mes projets futurs, je me suis lancée dans la conception de ce portfolio.</p>
+
+			<p>La base HTML/CSS vient en partie de Nicolas Brondin-Bernard qui proposait un template en une page (lien de son projet
+				<a target="_blank" href="https://github.com/NicolasBrondin/john-doe">ici</a>).</p>
+
+			<p>J'ai créé ce projet avec Symfony, Twig et Bootstrap, et j'ai inséré cette base que j'ai personnalisée.</p>
+
+		</section>
+
+		<section class="hover-section">
+			<h5>Voir le projet</h5>
+
+			<p>Dépôt Github:
+				<a target="_blank" href="https://github.com/Amelie-Sausseau/Amelie-Sausseau">
+					<i class="fab fa-github-square">&emsp;</i>
+				</a>
+			</p>
+		</section>
+		<hr/>
+
+		<div class="container">
+
+			<a class="button" href="{{ path('projects') }}">Retour aux réalisations</a>
+			<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+
+		</div>
+
+	{% endblock %}

@@ -2,7 +2,7 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
-    background-image: url(../img/sky.jpeg);
+    background-image: url(../img/code.jpeg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,14 +21,22 @@ body {
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
-    padding: 10px;
-    padding-top: 100px;
+    padding-bottom: 10px;
     box-sizing: border-box;
     text-align: center;
 }
 
+.home {
+    margin-top: 30px;
+}
+
+.navbar {
+    max-width: 100%;
+    width: 100%;
+}
+
 .cv {
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -55,6 +63,30 @@ body {
     color: #3b5998;
 }
 
+.fab:hover, 
+.fas:hover,
+.far:hover {
+    font-size: 30px;
+    color: #f0f2f5;;
+}
+
+section {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.hover-section {
+    background-color: #f0f2f5;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
 .page {
     position: relative;
     height: 100vh;
@@ -73,49 +105,15 @@ body {
     margin: auto;
 }
 
-.project-description {
-    text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.project-description h2 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.project-picture {
-    position: absolute;
-    border-radius: 50%;
-    width: 220px;
-    height: 160px;
-    top: -50px;
-    left: calc(50% - 80px);
-    border: 5px solid white;
-}
-
-.project-pictures {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.project-thumbnail img {
-    flex-wrap: nowrap;
-    width: 300px;
-    border-radius: 11px;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
-    margin: 10px;
-    margin-right: 20px;
-    background: black;
-}
-
 h1, h2, h3, h5 {
     margin-bottom: 20px;
 }
 
 h5 {
+    margin-top: 20px;
+}
+
+h1 {
     margin-top: 20px;
 }
 
@@ -145,6 +143,10 @@ hr {
 .button:hover {
     background: #f0f2f5;
     color: black;
+}
+
+.contact a {
+    margin-right: 25px;
 }
 
 [disabled]{
@@ -194,6 +196,10 @@ hr {
     border: 2px solid white;
 }
 
+#portfolio {
+    width: 170px;
+}
+
 @media screen and (max-width: 500px){
     .list li {
         width: 100%;
@@ -210,8 +216,24 @@ hr {
     .button {
         margin: 5px 10px;
     }
-    .or {
+
+    .cv {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section a {
         display: inline-block;
         width: 100%;
+    }
+
+    #picture,
+    #country {
+        margin-top: 100px;
+    }
+
+    .home {
+        margin-top: 150px;
     }
 }
