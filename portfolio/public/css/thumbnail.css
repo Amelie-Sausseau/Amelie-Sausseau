@@ -22,8 +22,7 @@
     opacity: 0.75;
 }
 
-.thumbnail-kroon {
-    background-image: url(../img/logo-kroon.png);
+.thumbnail-project {
     width: 100%;
     height: 150px;
     background-size: cover;
@@ -106,4 +105,9 @@
     text-decoration: none;
     padding: 5px 10px;
     font-weight: 500;
+}
+
+.thumbnail-footer a:hover {
+    background: #f0f2f5;
+    color: black;
 }

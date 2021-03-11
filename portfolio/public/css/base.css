@@ -2,7 +2,7 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
-    background-image: url(../img/sky.jpeg);
+    background-image: url(../img/code.jpeg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,6 +53,13 @@ body {
 .far {
     font-size: 30px;
     color: #3b5998;
+}
+
+.fab:hover, 
+.fas:hover,
+.far:hover {
+    font-size: 30px;
+    color: #f0f2f5;;
 }
 
 .page {
@@ -192,6 +199,10 @@ hr {
     top: 30px;
     left: calc(50% + 80px);
     border: 2px solid white;
+}
+
+#portfolio {
+    width: 170px;
 }
 
 @media screen and (max-width: 500px){
