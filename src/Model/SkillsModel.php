@@ -5,7 +5,7 @@ namespace App\Model;
 class SkillsModel
 {
     private $skills = [
-        0 => [
+    0 => [
             'name' => 'HTML',
             'image' => 'html.png',
         ],
