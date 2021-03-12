@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\SkillsModel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -35,5 +36,18 @@ class MainController extends AbstractController
     {
         // on force le téléchargement du calendrier
         return $this->file(__DIR__ . '/../../public/files/CV+Amélie+Sausseau.pdf');
+    }
+
+    /**
+     * @Route("/skills", name="skills")
+     */
+    public function skills(SkillsModel $skills): Response
+    {
+        $allSkills = $skills->getAll();
+    
+        return $this->render('main/skills.html.twig', [
+            'controller_name' => 'MainController',
+            'all_skills' => $allSkills,
+        ]);
     }
 }

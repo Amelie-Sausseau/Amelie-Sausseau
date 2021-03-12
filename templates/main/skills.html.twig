@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Compétences
+{% endblock %}
+
+{% block body %}
+
+	<h3>Compétences</h3>
+
+	<section>
+		{% for skill_list, skills in all_skills %}
+			<div class="thumbnail-skills">
+				<img class="thumbnail-skimg" src="{{ asset('img/skills/' ~ skills.image) }}"/>
+				<div class="thumbnail-content">
+					<p class="thumbnail-skillname">{{ skills.name }}</p>
+				</div>
+			</div>
+		{% endfor %}
+
+
+	{% endblock %}

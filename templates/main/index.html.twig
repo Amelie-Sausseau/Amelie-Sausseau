@@ -6,162 +6,28 @@
 {% block body %}
 	<div class="home">
 		<div class="description">
-			<img class="picture" src="{{ asset('img/70524441.jpeg') }}"/>
-			<img class="country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
 			<section>
-
-				<h1>Bonjour, je suis
-					<strong>Amélie Sausseau</strong>
-				</h1>
+				<h1>Bonjour, je suis Amélie Sausseau</h1>
 				<h2>Développeuse web back-end</h2>
+				
+				<div class="presentation">
+				<img src="{{ asset('img/amsymf.png') }}"/>
+				
 				<p>
-					Actuellement à la recherche d'un stage à
-					<strong>La Rochelle et ses alentours</strong>.</p>
-				<p>Après 6 années en tant que secrétaire médicale dans un service de consultations hospitalières qui m'ont permis de travailler en équipe, d'être organisée, rigoureuse et souriante peu importe l'urgence de la situation, j'ai souhaité aborder un nouveau tournant dans ma carrière.</p>
+				
+				Après 6 années en tant que secrétaire médicale dans un service de consultations hospitalières qui m'ont permis de travailler en équipe, d'être organisée, rigoureuse et souriante peu importe l'urgence de la situation, j'ai souhaité aborder un nouveau tournant dans ma carrière.<br>
 
-				<p>Etant passionnée par l'univers du web, j'ai pu intégrer une formation de 5 mois avec spécialisation Symfony dans l'école O'Clock, labélisée GEN (-><a target="_blank" href="https://oclock.io/formations/developpeur-web#programme">Programme détaillé</a>)</p>
+				Etant passionnée depuis plusieurs années par l'univers du web, j'ai pu intégrer une formation de 5 mois avec spécialisation Symfony dans l'école O'Clock, labélisée GEN (-><a target="_blank" href="https://oclock.io/formations/developpeur-web#programme">Programme détaillé</a>)<br><br>
 
-				<p>Ces cours étant en téléprésentiel et m'ayant régulièrement fait travailler en pair-programming, je suis ouverte aux emplois en full-remote.
+				Après ces mois d'apprentissage qui m'ont confortée dans mon choix de reconversion, je suis prête pour me lancer dans de nouvelles aventures en entreprise.<br><br>
+
+				Ces cours étant en téléprésentiel et m'ayant régulièrement fait travailler en pair-programming, je suis ouverte aux emplois en full-remote en fonction des opportunités qui me seront offertes.<br><br>
+
 				</p>
-			</p>
+			</div>
 		</div>
 	</section>
 	<br>
-	<section class="hover-section">
-		<h3>Réalisations</h3>
-		<div class="thumbnail">
-			<img class="thumbnail-project" src="{{ asset('img/logo-kroon.png') }}">
-			<div class="thumbnail-content">
-				<span class="badge">Application</span>
-				<p class="thumbnail-title">Kroon
-				</p>
-				<p class="thumbnail-description">Site d'entraide pour retrouver l'origine ou le titre d'un son, d'une réplique de film...</p>
-				<div class="thumbnail-footer">
-					<a href="{{ path('kroon') }}">En savoir plus</a>
-				</div>
-			</div>
-		</div>
-		<div class="thumbnail">
-			<img class="thumbnail-project" src="{{ asset('img/code.jpeg') }}">
-			<div class="thumbnail-content">
-				<span class="badge">Site</span>
-				<p class="thumbnail-title">Portfolio
-				</p>
-				<p class="thumbnail-description">Réalisation de mon portfolio avec utilisation du framework Symfony</p>
-				<div class="thumbnail-footer">
-					<a href="{{ path('portfolio') }}">En savoir plus</a>
-				</div>
-			</div>
-		</div>
-
-	</section>
-	<section class="hover-section">
-		<h3>Compétences</h3>
-		<ul class="list">
-			<li>
-				<div class="skill-box">
-					HTML/CSS
-					<div class="box-well">
-						Langage
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					PHP
-					<div class="box-well">
-						Langage
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					Symfony
-					<div class="box-well">
-						Framework
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					Twig
-					<div class="box-well">
-						Langage
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					Bootstrap
-					<div class="box-well">
-						CSS
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					Git
-					<div class="box-well">
-						Versioning
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					MySQL
-					<div class="box-well">
-						Base de données
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					Linux
-					<div class="box-well">
-						Système d'exploitation
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					Windows
-					<div class="box-well">
-						Système d'exploitation
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="skill-box">
-					VS Code
-					<div class="box-well">
-						Logiciel
-					</div>
-				</div>
-			</li>
-		</ul>
-
-	</section>
-	<section class="hover-section">
-		<h3>Parcours</h3>
-		<div class="path">
-			<div class="step">
-				<p class="step-title">Formation développeur web/web mobile école O'Clock - Septembre 2020 à Mars 2021</p>
-				<p>- Socle 3 mois (HTML, CSS, PHP, JavaScript, Bootstrap, WordPress, MySQL, Github, AWS, environnement Linux)<br>
-					- Spécialisation 1 mois (Symfony, Doctrine, Twig)<br>
-					- Projet professionnel 1 mois (Travail à distance en groupe de 4 selon la méthode Scrum avec utilisation de Google Drive, Github, LiveShare sur VSCode, Slack et Discord)</p>
-			</div>
-			<div class="step">
-				<p class="step-title">Secrétaire médicale - Avril 2015 à Mars 2021</p>
-				<p>Référente dans un secrétariat médical composé de 6 médecins et 3 secrétaires.
-																				Intermédiaire entre l'encadrement, les médecins, le secrétariat du service et les patients.</p>
-			</div>
-			<div class="step">
-				<p class="step-title">Employée de parfumerie - Décembre 2012 à Septembre 2014</p>
-				<p>En charge du conseil client et de la caisse.</p>
-			</div>
-		</div>
-	</div>
-</section>
 <hr/>
 <section class="contact">
 	<h5>En savoir plus</h5>
@@ -181,4 +47,4 @@
 		<a target="_blank" href="https://github.com/Amelie-Sausseau/">
 			<i class="fab fa-github-square"></i></a>
 	</p>
-</section></div>{% endblock %}
+</section>{% endblock %}
