@@ -27,7 +27,7 @@ class SkillsModel
 
         [
             'name' => 'Symfony',
-            'image' => 'Symfony.jpg',
+            'image' => 'symfony.png',
         ],
 
         [
