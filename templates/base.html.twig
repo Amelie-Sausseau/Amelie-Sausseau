@@ -20,8 +20,7 @@
 
 		<link href="{{ asset('css/base.css') }}" rel="stylesheet">
 		<link href="{{ asset('css/project.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/thumbnail.css') }}" rel="stylesheet"> 
-		{% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		<link href="{{ asset('css/thumbnail.css') }}" rel="stylesheet"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
 		</head>
 
 		<body>
@@ -52,6 +51,7 @@
 						</div>
 					</nav>
 					{% block body %}{% endblock %}
+
 				</div>
 			</div>
 		</body>
