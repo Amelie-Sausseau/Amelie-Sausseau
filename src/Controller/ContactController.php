@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\MailerInterface;
@@ -20,7 +19,7 @@ class ContactController extends AbstractController
     {
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
-        
+
         if ($form->isSubmitted() && $form->isValid()) {
 
             $contactFormData = $form->getData();
@@ -30,23 +29,30 @@ class ContactController extends AbstractController
                 ->to('amelie.sausseau@gmail.com')
                 ->subject('Nouveau message depuis le portfolio')
                 ->text(
-                    'Envoyé par : '.$contactFormData['name'] . '(' .$contactFormData['email'].')'.\PHP_EOL.
-                    'Message :' . $contactFormData['message'],
+                    'Envoyé par : ' . $contactFormData['name'] . '(' . $contactFormData['email'] . ')' . \PHP_EOL .
+                        'Message :' . $contactFormData['message'],
                     'text/plain'
                 );
 
             $mailer->send($message);
 
-            return new JsonResponse([
-                'success' => true,
-            ]);
+            $this->addFlash('success', 'Votre message a bien été envoyé');
 
             return $this->redirectToRoute('contact');
         }
-            return $this->render('contact/index.html.twig', [
+        return $this->render('contact/index.html.twig', [
             'controller_name' => 'ContactController',
             'form' => $form->createView(),
         ]);
-        
+    }
+
+    public function delete(Request $request)
+    {
+        $submittedToken = $request->request->get('token');
+
+        // 'delete-item' is the same value used in the template to generate the token
+        if ($this->isCsrfTokenValid('delete-item', $submittedToken)) {
+            // ... do something, like deleting an object
+        }
     }
 }

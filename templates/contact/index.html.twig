@@ -36,12 +36,12 @@
 				{{ form_widget(form.message, {'attr':{'class':'form-control'}}) }}
 				{{ form_errors(form.message) }}
 
-				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
-
 
 				<h6>* Champs obligatoires</h6>
 
 			</div>
+
+			<input type="hidden" name="token" value="{{ csrf_token('delete-item') }}"/>
 
 
 			<button class="button" type="submit">Envoyer</button>
