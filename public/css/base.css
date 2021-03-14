@@ -2,8 +2,7 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
-    background-color: #f1ccd4;
-    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    background-color: #e8d3d7;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
