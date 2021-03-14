@@ -38,6 +38,7 @@ class ContactType extends AbstractType
     {
         $resolver->setDefaults([
             'csrf_protection' => true,
+            'data_class' => Email::class,
         ]);
     }
 }
