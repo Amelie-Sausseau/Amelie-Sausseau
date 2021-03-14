@@ -37,9 +37,19 @@
 				{{ form_errors(form.message) }}
 
 
+1
+2
+3
+        <input type="hidden" name="_csrf_token"
+    value="{{ csrf_token('authenticate') }}"
+>
+
+
 				<h6>* Champs obligatoires</h6>
 
 			</div>
+
+			{{ form_rest(form) }}
 
 
 			<button class="button" type="submit">Envoyer</button>
