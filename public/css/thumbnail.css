@@ -120,7 +120,7 @@
 
 .thumbnail .badge {
     position: absolute;
-    background: rgba(189, 22, 189, 0.667);
+    background: rgb(218, 117, 218);
     border-radius: 20px;
     color: white;
     top:-10px;
@@ -143,7 +143,9 @@
 }
 
 .thumbnail-footer a:hover {
-    background: #fae5e7;
+    background: linear-gradient(145deg, #e1c4c8, #ffe9ee);
+    box-shadow:  7px 7px 15px #d5b9bd,
+             -7px -7px 15px #fffbff;
     color: black;
 }
 
@@ -152,5 +154,6 @@
         max-width: 95%;
         margin-left: auto;
         margin-right: auto;
+        margin: 0;
     }
 }

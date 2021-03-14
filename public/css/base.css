@@ -2,7 +2,8 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
-    background-color: #fae5e7;
+    background-color: #f1ccd4;
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +23,7 @@ a:hover {
 .card {
     position: relative;
     background: white;
-    max-width: 85%;
+    max-width: 90%;
     width: 100%;
     height: fit-content;
     border-radius: 15px;
@@ -73,7 +74,7 @@ a:hover {
 .fas:hover,
 .far:hover {
     font-size: 30px;
-    color: #fadade;;
+    color: #fadade;
 }
 
 section {
@@ -121,7 +122,7 @@ section {
     margin: auto;
 }
 
-.presentation{
+.presentation {
     display: flex;
     width: 100%;
     align-content: space-between;
@@ -141,7 +142,7 @@ section {
 .presentation p {
     text-align: left;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 50%;
     line-height: 1.5;
 }
@@ -213,14 +214,6 @@ hr {
 
 .list li {
     width: 50%;
-}
-
-.list li:nth-child(even){
-    text-align: left;
-}
-
-.list li:nth-child(odd){
-    text-align: right;
 }
 
 #portfolio {
