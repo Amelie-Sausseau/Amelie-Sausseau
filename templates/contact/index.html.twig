@@ -36,7 +36,6 @@
 				{{ form_widget(form.message, {'attr':{'class':'form-control'}}) }}
 				{{ form_errors(form.message) }}
 
-				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
 				{{ form_rest(form) }}
 
