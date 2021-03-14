@@ -46,13 +46,4 @@ class ContactController extends AbstractController
         ]);
     }
 
-    public function delete(Request $request)
-    {
-        $submittedToken = $request->request->get('token');
-
-        // 'delete-item' is the same value used in the template to generate the token
-        if ($this->isCsrfTokenValid('delete-item', $submittedToken)) {
-            // ... do something, like deleting an object
-        }
-    }
 }
