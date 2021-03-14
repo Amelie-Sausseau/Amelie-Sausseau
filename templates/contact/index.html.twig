@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Contact
+{% endblock %}
 
 {% block body %}
 
@@ -9,42 +10,44 @@
 	</h1>
 
 	<form method="post">
-	<div class="container">
+		<div class="container">
 
-		<a target="_blank" href="https://www.linkedin.com/in/amelie-sausseau/">
-			<i class="fab fa-linkedin"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/amelie-sausseau/">
+				<i class="fab fa-linkedin"></i></a>
 
-		<a target="_blank" href="https://github.com/Amelie-Sausseau/">
-			<i class="fab fa-github-square"></i></a>
+			<a target="_blank" href="https://github.com/Amelie-Sausseau/">
+				<i class="fab fa-github-square"></i></a>
 
-		{{ form_start(form) }}
-		{{ form_errors(form) }}
+			{{ form_start(form) }}
+			{{ form_errors(form) }}
 
-        <div class="form-group">
-		{{ form_label(form.name, 'Nom *') }}
-        {{ form_widget(form.name, {'attr':{'class':'form-control'}}) }}
-        {{ form_errors(form.name) }}
-        <br>
+			<div class="form-group">
+				{{ form_label(form.name, 'Nom *') }}
+				{{ form_widget(form.name, {'attr':{'class':'form-control'}}) }}
+				{{ form_errors(form.name) }}
+				<br>
 
-		{{ form_label(form.email, 'Adresse email *') }}
-        {{ form_widget(form.email, {'attr':{'class':'form-control'}}) }}
-        {{ form_errors(form.email) }}
-        <br>
+				{{ form_label(form.email, 'Adresse email *') }}
+				{{ form_widget(form.email, {'attr':{'class':'form-control'}}) }}
+				{{ form_errors(form.email) }}
+				<br>
 
-		{{ form_label(form.message, 'Votre message *') }}
-        {{ form_widget(form.message, {'attr':{'class':'form-control'}}) }}
-        {{ form_errors(form.message) }}
-        
+				{{ form_label(form.message, 'Votre message *') }}
+				{{ form_widget(form.message, {'attr':{'class':'form-control'}}) }}
+				{{ form_errors(form.message) }}
 
-        <h6>* Champs obligatoires</h6>
-
-        </div>
+				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
 
-		<button class="button" type="submit">Envoyer</button>
-		<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+				<h6>* Champs obligatoires</h6>
 
-		{{ form_end(form) }}
-	</div>
-</form>
+			</div>
+
+
+			<button class="button" type="submit">Envoyer</button>
+			<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+
+			{{ form_end(form) }}
+		</div>
+	</form>
 {% endblock %}
