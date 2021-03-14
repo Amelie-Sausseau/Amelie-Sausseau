@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\MailerInterface;
@@ -36,7 +37,9 @@ class ContactController extends AbstractController
 
             $mailer->send($message);
 
-            $this->addFlash('success', 'Votre message a bien été envoyé');
+            return new JsonResponse([
+                'success' => true,
+            ]);
 
             return $this->redirectToRoute('contact');
         }
