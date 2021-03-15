@@ -9,7 +9,7 @@
 		Contact
 	</h1>
 
-	<form method="post">
+	<form method="post" {{form_enctype(form)}}>
 		<div class="container">
 
 			<a target="_blank" href="https://www.linkedin.com/in/amelie-sausseau/">
@@ -19,7 +19,6 @@
 				<i class="fab fa-github-square"></i></a>
 
 			{{ form_start(form) }}
-			{{ form_errors(form) }}
 
 			<div class="form-group">
 				{{ form_label(form.name, 'Nom *') }}
@@ -44,12 +43,10 @@
 
 			</div>
 
-			{{ form_rest(form) }}
 
-
-			<button class="button" type="submit">Envoyer</button>
+			<button class="button" type="submit" value="submit">Envoyer</button>
 			<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
-
+			{{ form_rest(form) }}
 			{{ form_end(form) }}
 		</div>
 	</form>
