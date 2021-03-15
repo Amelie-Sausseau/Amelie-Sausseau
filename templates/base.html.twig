@@ -43,12 +43,11 @@
 									<li class="nav-item">
 										<a class="nav-link {% if app.request.get('_route') == 'skills' %}active{% endif %}" href="{{ path('skills') }}">Compétences</a>
 									</li>
-									<li class="nav-item">
+									{#<li class="nav-item">
 										<a class="nav-link {% if app.request.get('_route') == 'contact' %}active{% endif %}" href="{{ path('contact') }}">Contact</a>
-									</li>
-								</li>
-							</ul>
-						</div>
+									</li>#}
+								</ul>
+							</div>
 					</nav>
 					{% block body %}{% endblock %}
 
