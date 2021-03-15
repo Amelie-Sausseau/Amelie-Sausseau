@@ -18,6 +18,10 @@
 			<a target="_blank" href="https://github.com/Amelie-Sausseau/">
 				<i class="fab fa-github-square"></i></a>
 
+			{% for flashMessage in app.flashes('success') %}
+				<div class="p-3 my-2 rounded-2 success" role="alert">{{ flashMessage }}</div>
+			{% endfor %}	
+
 			{{ form_start(form) }}
 
 			<div class="form-group">

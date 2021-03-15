@@ -150,6 +150,11 @@ section {
     padding-bottom: 200px;
 }
 
+.success {
+    background-color: rgb(184, 248, 184);
+    
+}
+
 h1, h2, h3, h5 {
     margin-bottom: 20px;
 }
