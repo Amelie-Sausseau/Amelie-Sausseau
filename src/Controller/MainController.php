@@ -34,8 +34,8 @@ class MainController extends AbstractController
      */
     public function download(): Response
     {
-        // on force le téléchargement du calendrier
-        return $this->file(__DIR__ . '/../../public/files/CV+Amélie+Sausseau.pdf');
+        // téléchargement du fichier
+        return $this->file(__DIR__ . '/../../public/files/CV+Amelie+Sausseau.pdf');
     }
 
     /**
