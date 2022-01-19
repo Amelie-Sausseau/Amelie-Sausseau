@@ -4,8 +4,10 @@
     margin-right: 20px;
 }
 
-.project-description h2 {
+.project-description h2,
+.project-description h6 {
     text-align: center;
+    font-weight: bold;
     margin-top: 20px;
 }
 
