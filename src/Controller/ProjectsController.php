@@ -37,4 +37,14 @@ class ProjectsController extends AbstractController
             'controller_name' => 'ProjectsController',
         ]);
     }
+
+    /**
+     * @Route("/sonic", name="sonic")
+     */
+    public function sonic(): Response
+    {
+        return $this->render('projects/sonic.html.twig', [
+            'controller_name' => 'ProjectsController',
+        ]);
+    }
 }

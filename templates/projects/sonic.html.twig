@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sonic
+{% endblock %}
+
+{% block body %}
+
+	<section>
+		<div class="project-description">
+			<h2>Exercice Sonic</h2>
+
+			<p>Exercice d'évaluation réalisé en cours de formation O'Clock afin de pratiquer le modèle MVC et les requêtes en base de données. L'ensemble a été réalisé "from scratch", seule la BDD a été fournie au préalable.</p>
+
+			<p>Consignes imposées :</p>
+			<ul>
+				<li>Présentation des différents personnages en page d'accueil avec leur nom, leur photo et leur rôle.</li>
+				<li>Ajout d'une page "créateurs" avec leurs noms et rapide description à afficher "en dur".</li>
+			</ul>
+			<p>Cet exercice d'évaluation était à réaliser en quelques heures seulement, il n'y avait pas d'intégration html/CSS imposée, j'ai choisi de tout de même la travailler un minimum. Ayant eu le temps de terminer cet exercice, j'ai choisi d'également ajouter une page "jeux" afin de continuer de jouer avec les requêtes.</p>
+		</div>
+
+		<div class="project-pictures">
+			<div class="project-sonic-thumbnail">
+				<img src="{{ asset('img/Sonic1.PNG') }}"/>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="more-section">
+		<h5>Voir le projet</h5>
+
+		<p>Le site (non responsive):
+			<a target="_blank" href="https://sonic-exercice.herokuapp.com/">
+				<i class="fas fa-link">&emsp;</i>
+			</a>
+		</p>
+
+		<p>Dépôt Github:
+			<a target="_blank" href="https://github.com/Amelie-Sausseau/Sonic">
+				<i class="fab fa-github-square">&emsp;</i>
+			</a>
+		</p>
+	</section>
+	<hr/>
+
+	<div class="container">
+
+		<a class="button" href="{{ path('projects') }}">Retour aux réalisations</a>
+		<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+
+	</div>
+
+{% endblock %}
