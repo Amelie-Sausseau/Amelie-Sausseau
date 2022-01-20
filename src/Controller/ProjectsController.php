@@ -19,6 +19,16 @@ class ProjectsController extends AbstractController
     } 
 
     /**
+     * @Route("/instalike", name="instalike")
+     */
+    public function instalike(): Response
+    {
+        return $this->render('projects/instalike.html.twig', [
+            'controller_name' => 'ProjectsController',
+        ]);
+    }
+
+    /**
      * @Route("/kroon", name="kroon")
      */
     public function kroon(): Response

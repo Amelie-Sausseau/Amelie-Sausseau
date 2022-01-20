@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}InstaLike
+{% endblock %}
+
+{% block body %}
+
+	<section>
+		<div class="project-description">
+			<h2>InstaLike - En cours de développement</h2>
+			<h6>Technos utilisées : HTML - CSS - PHP/Symfony - Twig - Bootstrap - MySQL</h6>
+
+			<p>Site responsive réalisé à but d'entrainement sur le modèle d'Instagram</p>
+
+			<p>Fonctionnalités mises en place :</p>
+			<ul>
+				<li>Système d'identification (création de compte, connexion)</li>
+				<li>Mise en ligne de photos</li>
+				<li>Commentaires</li>
+				<li>Tableau de bord permettant de regrouper l'ensemble des photos postées et les commentaires déposés par utilisateur</li>
+			</ul>
+
+			<p>Je souhaite également y ajouter un système de favoris.</p>
+
+		</div>
+
+		<div class="project-pictures">
+			<div class="project-thumbnail">
+				<img src="{{ asset('img/Instalike.png') }}"/>
+			</div>
+
+			<div class="project-thumbnail">
+				<img src="{{ asset('img/Instalike2.png') }}"/>
+			</div>
+
+			<div class="project-thumbnail">
+				<img src="{{ asset('img/Instalike3.png') }}"/>
+			</div>
+
+			<div class="project-thumbnail">
+				<img src="{{ asset('img/Instalike4.png') }}"/>
+			</div>
+			<div class="project-thumbnail">
+				<img src="{{ asset('img/Instalike5.png') }}"/>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="more-section">
+		<h5>Voir le projet</h5>
+
+		<p>Dépôt Github:
+			<a target="_blank" href="https://github.com/Amelie-Sausseau/InstaLike">
+				<i class="fab fa-github-square">&emsp;</i>
+			</a>
+		</p>
+	</section>
+	<hr/>
+
+	<div class="container">
+
+		<a class="button" href="{{ path('projects') }}">Retour aux réalisations</a>
+		<a class="button" href="{{ path('main') }}">Retour à l'accueil</a>
+
+	</div>
+
+{% endblock %}
