@@ -35,7 +35,7 @@ class MainController extends AbstractController
     public function download(): Response
     {
         // téléchargement du fichier
-        return $this->file(__DIR__ . '/../../public/files/CV+Amelie+Sausseau.pdf');
+        return $this->file(__DIR__ . '/../../public/files/CV-Amélie-Sausseau.pdf');
     }
 
     /**
