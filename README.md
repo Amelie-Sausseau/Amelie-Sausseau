@@ -1,6 +1,6 @@
 ### Bonjour 👋
 
-Je suis Amélie, récemment sortie de l'école O'Clock où je me suis spécialisée en Back-end (Symfony).
+Je suis Amélie, après avoir fait l'école O'Clock où je me suis spécialisée en Back-end (Symfony), je me reforme au développement web en alternance avec l'école Arinfo, tout en apprenant le NoCode en entreprise.
 
 Bienvenue sur mon Github !
 <!--
